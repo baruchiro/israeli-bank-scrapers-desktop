@@ -1,6 +1,7 @@
 # israeli-bank-scrapers-desktop
 
-> ### Due to COVID-19 we are busy with other things, but if this is the opportunity for you to be busy with this project, we are here to help.
+> ### We are working on consolidation with another project, and work is underway in another repository. This repository can be used for the time being, but it is not fully maintained.
+> You are welcome to come to https://github.com/brafdlog/budget-tracking.
 
 Secure desktop app for retriving your bank transactions. Works for all israeli banks and credit cards.
 
