@@ -20,9 +20,10 @@ test('Should encrypt value of simple object', async () => {
   expect(encrypted[encryptedKeys[0]]).not.toEqual(original[originalKeys[0]]);
 });
 
-test('Should throw when encrypt a number value', async () => {
+test('Should not encrypt a number value', async () => {
   const original = { key: 1234 };
-  await expect(encryptObject(original)).rejects.toThrowError();
+  const encrypted = await encryptObject(original)
+  expect(encrypted).toStrictEqual(original);
 });
 
 test('Should encrypt an array values', async () => {
