@@ -19,6 +19,10 @@ async function encryptValue(val) {
   if (Array.isArray(val)) {
     return encryptArray(val);
   }
+  if (typeof val === 'number') {
+    console.warn('Number can\'t be encrypted');
+    return val;
+  }
   return encrypt(val);
 }
 
@@ -28,6 +32,9 @@ async function decryptValue(val) {
   }
   if (Array.isArray(val)) {
     return decryptArray(val);
+  }
+  if (typeof val === 'number') {
+    return val;
   }
   return decrypt(val);
 }
