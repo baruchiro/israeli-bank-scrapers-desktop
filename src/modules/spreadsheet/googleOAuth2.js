@@ -6,8 +6,8 @@ const keytarAccount = 'googleOauth2Token';
 const successRedirectURL = 'https://github.com/baruchiro/israeli-bank-scrapers-desktop';
 
 // eslint-disable-next-line camelcase
-async function saveToken({ refresh_token }) {
-  const encryptedToken = await encryptObject({ refresh_token });
+async function saveToken({ expiry_date, refresh_token }) {
+  const encryptedToken = await encryptObject({ expiry_date, refresh_token });
   const strToken = JSON.stringify(encryptedToken);
   return saveIntoAccount(keytarAccount, strToken);
 }
@@ -38,7 +38,7 @@ export async function CreateClient() {
 
   const savedToken = await loadToken();
 
-  if (savedToken !== null) {
+  if (savedToken?.expiry_date && savedToken.expiry_date > Date.now()) {
     myApiOauth.setTokens(savedToken);
   } else {
     const token = await myApiOauth.openAuthWindowAndGetTokens();

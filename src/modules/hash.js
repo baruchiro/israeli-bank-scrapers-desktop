@@ -1,6 +1,6 @@
 /* eslint-disable no-bitwise */
 
-export default function (str) {
+export default (str) => {
   if (str.length === 0) return 0;
 
   let hash = 0;
@@ -12,4 +12,4 @@ export default function (str) {
     hash |= 0; // Convert to 32bit integer
   }
   return hash;
-}
+};
