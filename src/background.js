@@ -16,7 +16,6 @@ let mainWindow;
 global.logger = CreateLogger(app);
 const { logger } = global;
 
-
 function createWindow() {
   // Create the browser window.
   mainWindow = new BrowserWindow({

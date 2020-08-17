@@ -36,10 +36,7 @@ export default {
   data() {
     return {
       properties: {
-        folder: path.join(
-          remote.app.getPath('cache'),
-          remote.app.getName(),
-        ),
+        folder: path.join(remote.app.getPath('cache'), remote.app.getName()),
         file: 'transactions.json',
       },
       loading: false,
@@ -90,5 +87,4 @@ export default {
 </script>
 
 <style scoped>
-
 </style>
