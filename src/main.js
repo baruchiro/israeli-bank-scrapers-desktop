@@ -10,7 +10,6 @@ import store from './store';
 
 initializeReporter();
 
-
 const logger = electron.remote.getGlobal('logger');
 logger.info('The renderer process got the logger');
 Vue.use(LoggerPlugin, { logger });
