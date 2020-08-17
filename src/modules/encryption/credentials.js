@@ -20,7 +20,7 @@ async function encryptValue(val) {
     return encryptArray(val);
   }
   if (typeof val === 'number') {
-    console.warn('Number can\'t be encrypted');
+    console.warn('Number can\'t be encrypted'); // eslint-disable-line no-console
     return val;
   }
   return encrypt(val);
