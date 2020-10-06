@@ -86,7 +86,7 @@ export default {
         );
         this.addImporterAction(encrypted);
         this.resetForm();
-        this.$emit('scraperAdded', true);
+        this.$emit('scraper-added', true);
       }
     },
     resetForm() {

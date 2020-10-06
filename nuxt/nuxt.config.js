@@ -9,7 +9,6 @@ const routerBase = process.env.GITHUB_ACTIONS ? {
 } : {};
 
 export default {
-  mode: 'universal',
   ...routerBase,
   /*
    ** Headers of the page

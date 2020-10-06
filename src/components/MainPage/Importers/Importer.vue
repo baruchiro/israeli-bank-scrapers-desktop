@@ -41,7 +41,7 @@
         height="25"
         reactive
       >
-        <template v-slot="{ value }">
+        <template #default="{ value }">
           <strong>{{ value }}%</strong>
         </template>
       </v-progress-linear>

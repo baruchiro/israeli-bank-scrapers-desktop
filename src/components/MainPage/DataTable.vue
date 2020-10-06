@@ -14,7 +14,7 @@
       :height="contentHeight"
       fixed-header
     >
-      <template v-slot:expanded-item="{ item }">
+      <template #expanded-item="{ item }">
         <td :colspan="headers.length">
           <ul>
             <li

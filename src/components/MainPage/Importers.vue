@@ -13,12 +13,12 @@
       >
         <v-expansion-panel-header disable-icon-rotate>
           {{ importer.name }}
-          <template v-slot:actions>
+          <template #actions>
             <v-tooltip
               v-if="importer.status.lastMessage !== null"
               bottom
             >
-              <template v-slot:activator="{ on }">
+              <template #activator="{ on }">
                 <v-icon
                   :color="iconClass(importer.status.success).color"
                   dark
@@ -56,7 +56,7 @@
           :key="scraper.key"
           :scraper="scraper"
           class="add-scraper"
-          @scraperAdded="drawer = !drawer"
+          @scraper-added="drawer = !drawer"
         />
       </v-expansion-panels>
     </v-navigation-drawer>

@@ -4,7 +4,7 @@
     transition="scale-transition"
     origin="bottom left"
   >
-    <template v-slot:activator="{ on }">
+    <template #activator="{ on }">
       <v-chip
         pill
         color="indigo"

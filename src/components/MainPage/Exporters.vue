@@ -13,12 +13,12 @@
       >
         <v-expansion-panel-header disable-icon-rotate>
           {{ comp.title }}
-          <template v-slot:actions>
+          <template #actions>
             <v-tooltip
               v-if="statuses[comp.name].lastMessage !== null"
               left
             >
-              <template v-slot:activator="{ on }">
+              <template #activator="{ on }">
                 <v-icon
                   :color="iconClass(statuses[comp.name].success).color"
                   dark
