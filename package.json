@@ -30,7 +30,7 @@
     "download-chromium": "^2.2.1",
     "electron-log": "^4.2.4",
     "googleapis": "^59.0.0",
-    "israeli-bank-scrapers-core": "^0.9.1",
+    "israeli-bank-scrapers-core": "^1.0.0",
     "keytar": "^6.0.1",
     "moment": "^2.27.0",
     "vue": "^2.6.12",
