@@ -16,7 +16,7 @@
   "dependencies": {
     "@nuxtjs/markdownit": "^1.2.9",
     "@nuxtjs/svg": "^0.1.11",
-    "axios": "^0.20.0",
+    "axios": "^0.21.0",
     "nuxt": "^2.14.0",
     "vue-scrollto": "^2.18.1"
   },
