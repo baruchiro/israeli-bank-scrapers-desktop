@@ -14,7 +14,7 @@ export default {
    ** Headers of the page
    */
   head: {
-    title: 'עוש"י',
+    title: 'עו"שי',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
