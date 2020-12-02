@@ -22,7 +22,6 @@ jobs:
   
   
   deploy:
-    if: github.ref == 'refs/heads/master'
     needs: test
     defaults:
       run:
@@ -32,5 +31,9 @@ jobs:
       - uses: actions/checkout@v2
       - name: yarn
         run: yarn
+      - name: generate
+        if: github.ref != 'refs/heads/master'
+        run: yarn generate
       - name: deploy
+        if: github.ref == 'refs/heads/master'
         run: yarn deploy -r "https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/baruchiro/israeli-bank-scrapers-desktop.git" -u "Baruch Odem <baruchiro@gmail.com>" -m "$GITHUB_SHA"
