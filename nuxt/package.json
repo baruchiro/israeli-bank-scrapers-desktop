@@ -16,15 +16,15 @@
   "dependencies": {
     "@nuxtjs/markdownit": "^1.2.9",
     "@nuxtjs/svg": "^0.1.11",
-    "axios": "^0.21.0",
-    "nuxt": "^2.14.0",
+    "axios": "^0.21.1",
+    "nuxt": "^2.14.12",
     "vue-scrollto": "^2.18.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.11.0",
+    "@babel/core": "^7.12.10",
     "@babel/preset-env": "^7.12.7",
     "@nuxtjs/tailwindcss": "^3.1.0",
-    "@vue/test-utils": "^1.0.0-beta.31",
+    "@vue/test-utils": "^1.1.2",
     "babel-core": "^7.0.0-bridge.0",
     "babel-jest": "^26.6.3",
     "eslint": "^7.10.0",
