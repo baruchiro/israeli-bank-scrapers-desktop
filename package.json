@@ -29,7 +29,7 @@
     "core-js": "^3.9.1",
     "download-chromium": "^2.2.1",
     "electron-log": "^4.2.4",
-    "googleapis": "^67.1.0",
+    "googleapis": "^67.1.1",
     "israeli-bank-scrapers-core": "^1.0.0",
     "keytar": "^7.2.0",
     "moment": "^2.27.0",
