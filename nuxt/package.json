@@ -35,7 +35,7 @@
     "eslint-plugin-import": "^2.20.2",
     "eslint-plugin-vue": "^7.0.1",
     "gh-pages": "^3.1.0",
-    "husky": "^4.2.5",
+    "husky": "^5.1.3",
     "jest": "^26.5.0",
     "jest-serializer-vue": "^2.0.2",
     "serve": "^11.3.0",
