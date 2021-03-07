@@ -40,7 +40,7 @@
     "vuex-electron": "^1.0.3"
   },
   "devDependencies": {
-    "@babel/core": "^7.12.10",
+    "@babel/core": "^7.13.8",
     "@babel/eslint-parser": "^7.11.3",
     "@babel/preset-env": "^7.11.0",
     "@babel/register": "^7.13.8",
