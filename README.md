@@ -1,5 +1,8 @@
-### We are working on consolidation with another project, and work is underway in another repository. This repository can be used for the time being, but it is not fully maintained.
-You are welcome to come to https://github.com/brafdlog/budget-tracking.
+# The project moved to https://github.com/brafdlog/budget-tracking.
+
+-----
+
+-----
 
 -----
 
