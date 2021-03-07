@@ -53,11 +53,10 @@ jobs:
       with:
         node-version: 10
     - name: Install Snapcraft
-      uses: samuelmeuli/action-snapcraft@06f69b882c878790b568f0247d623eaa49de2f3d
+      uses: samuelmeuli/action-snapcraft@10d7d0a84d9d86098b19f872257df314b0bd8e2d
       # Only install Snapcraft  on Ubuntu
       if: startsWith(matrix.os, 'ubuntu')
       with:
-        # Log in to  Snap Store
         snapcraft_token: ${{ secrets.snapcraft_token }}
     - name: Set 'publish' parameter
       shell: python
